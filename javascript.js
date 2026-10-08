@@ -4,8 +4,14 @@
 // Rock, paper, and scissors should be ouput as string values
 
 function getComputerChoice () {
-    const integer = Math.floor(Math.random() * 3);
-    
+    let integer = Math.floor(Math.random() * 3);
+    if (integer = 0) {
+        return "rock"
+    } else if (integer = 1) {
+        return "paper"
+    } else {
+        return "scissors"
+    }
 }
 
 console.log(getComputerChoice())
