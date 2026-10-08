@@ -13,5 +13,6 @@ function getComputerChoice () {
         return "scissors"
     }
 }
-
 console.log(getComputerChoice())
+
+function getHumanChoice () {}
