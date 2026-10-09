@@ -22,7 +22,8 @@ console.log(getComputerChoice())
 // The human choice should display below the computer choice in the console
 
 function getHumanChoice () {
-    let choice = window.prompt("Enter your choice of 'rock', 'paper', or 'scissors':", "Choice")
+    let choice = window.prompt("Enter your choice of 'rock', 'paper', or 'scissors':", "Choice");
+    return choice;
 }
+getHumanChoice(); 
 
-getHumanChoice();
