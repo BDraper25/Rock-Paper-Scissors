@@ -25,5 +25,8 @@ function getHumanChoice () {
     let choice = window.prompt("Enter your choice of 'rock', 'paper', or 'scissors':", "Choice");
     return choice;
 }
-getHumanChoice(); 
+
+let humanChoice = getHumanChoice();
+console.log(humanChoice);
+
 
