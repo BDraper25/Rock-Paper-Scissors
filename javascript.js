@@ -32,3 +32,9 @@ console.log(personsChoice);
 let humanScore = 0
 
 let computerScore = 0
+
+// Write a function that takes human and computer choices as arguments
+// The parameters will be humanChoice and computerChoice
+// Make humanChoice case insensitive
+// Create variables that will become the arguments to pass to function that store the players choices
+// After both choices are made, increment the winners score and log a winner announcement
