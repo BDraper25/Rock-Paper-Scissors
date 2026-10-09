@@ -38,3 +38,11 @@ let computerScore = 0
 // Make humanChoice case insensitive
 // Create variables that will become the arguments to pass to function that store the players choices
 // After both choices are made, increment the winners score and log a winner announcement
+
+function playRound(humanChoice, computerChoice) {
+    humanChoice = humanChoice.toLowerCase();
+    
+}
+
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
