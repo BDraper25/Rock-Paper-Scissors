@@ -15,4 +15,14 @@ function getComputerChoice () {
 }
 console.log(getComputerChoice())
 
-function getHumanChoice () {}
+// Create function for human choice of rock, paper, scissors
+// Have function display a prompt to input one of the options
+// Create a text field/box for the human input
+// The text field should include a submit/next button for submission
+// The human choice should display below the computer choice in the console
+
+function getHumanChoice () {
+    let choice = window.prompt("Enter your choice of 'rock', 'paper', or 'scissors':", "Choice")
+}
+
+getHumanChoice();
