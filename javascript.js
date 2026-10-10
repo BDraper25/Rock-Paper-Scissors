@@ -13,7 +13,6 @@ function getComputerChoice () {
         return "scissors"
     }
 }
-console.log(getComputerChoice())
 
 // Create function for human choice of rock, paper, scissors
 // Have function display a prompt to input one of the options
@@ -25,9 +24,6 @@ function getHumanChoice () {
     let choice = window.prompt("Enter your choice of 'rock', 'paper', or 'scissors':", "Choice");
     return choice;
 }
-
-let personsChoice = getHumanChoice();
-console.log(personsChoice);
 
 let humanScore = 0
 
