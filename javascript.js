@@ -58,14 +58,55 @@ function playGame () {
     let humanSelection;
     let computerSelection;
 
-        //Round 1
+    //Round 1
 
-        humanSelection = getHumanChoice();
-        computerSelection = getComputerChoice();
+    humanSelection = getHumanChoice();
+    computerSelection = getComputerChoice();
 
-        console.log(computerSelection);
-        console.log(humanSelection);
+    console.log(computerSelection);
+    console.log(humanSelection);
 
-        playRound(humanSelection, computerSelection);
+    playRound(humanSelection, computerSelection);
+
+    //Round 2
+
+    humanSelection = getHumanChoice();
+    computerSelection = getComputerChoice();
+
+    console.log(computerSelection);
+    console.log(humanSelection);
+
+    playRound(humanSelection, computerSelection);
+
+    //Round 3
+
+    humanSelection = getHumanChoice();
+    computerSelection = getComputerChoice();
+
+    console.log(computerSelection);
+    console.log(humanSelection);
+
+    playRound(humanSelection, computerSelection);
+
+    //Round 4
+
+    humanSelection = getHumanChoice();
+    computerSelection = getComputerChoice();
+
+    console.log(computerSelection);
+    console.log(humanSelection);
+
+    playRound(humanSelection, computerSelection);
+
+    //Round 5
+
+    humanSelection = getHumanChoice();
+    computerSelection = getComputerChoice();
+
+    console.log(computerSelection);
+    console.log(humanSelection);
+
+    playRound(humanSelection, computerSelection);
+
 }
 
