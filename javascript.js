@@ -25,17 +25,22 @@ function getHumanChoice () {
     return choice;
 }
 
-let humanScore = 0
-
-let computerScore = 0
-
 // Write a function that takes human and computer choices as arguments
 // The parameters will be humanChoice and computerChoice
 // Make humanChoice case insensitive
 // Create variables that will become the arguments to pass to function that store the players choices
 // After both choices are made, increment the winners score and log a winner announcement
 
-function playRound(humanChoice, computerChoice) {
+
+// Write a function and move playRound and the score variables into it
+// The function will play 5 rounds and keep track of scores
+// The function will declare a winner after the 5 rounds finish
+
+function playGame () {
+    let humanScore = 0;
+    let computerScore = 0; 
+
+    function playRound(humanChoice, computerChoice) {
     humanChoice = humanChoice.toLowerCase();
     if (humanChoice === computerChoice) {
         console.log("It's a tie!")
@@ -46,6 +51,7 @@ function playRound(humanChoice, computerChoice) {
         console.log("You lose! " + computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1) + " beats " + humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1) + "!");
         computerScore++;
     }
+}
 }
 
 const humanSelection = getHumanChoice();
