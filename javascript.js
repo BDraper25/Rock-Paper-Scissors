@@ -33,7 +33,9 @@ function getHumanChoice () {
 
 
 // Write a function and move playRound and the score variables into it
-// The function will play 5 rounds and keep track of scores
+// Move the round match code inside the play game function, not play round
+// repent the round code 5 times to have 5 rounds
+// Put a winner message inside the game function
 // The function will declare a winner after the 5 rounds finish
 
 function playGame () {
@@ -51,8 +53,12 @@ function playGame () {
             console.log("You lose! " + computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1) + " beats " + humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1) + "!");
             computerScore++;
         }
-        let humanSelection;
-        let computerSelection;
+    }
+
+    let humanSelection;
+    let computerSelection;
+
+        //Round 1
 
         humanSelection = getHumanChoice();
         computerSelection = getComputerChoice();
@@ -61,6 +67,5 @@ function playGame () {
         console.log(humanSelection);
 
         playRound(humanSelection, computerSelection);
-    }
 }
 
