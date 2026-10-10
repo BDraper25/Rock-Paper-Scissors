@@ -45,7 +45,7 @@ function playRound(humanChoice, computerChoice) {
         console.log("It's a tie!")
     } else if ((humanChoice === "rock" && computerChoice === "scissors") || (humanChoice === "paper" && computerChoice === "rock") || (humanChoice === "scissors" && computerChoice === "paper")) {
         console.log("You win! " + humanChoice.charAt(0).toUpperCase().slice(1) + " beats " + computerChoice.charAt(0).toUpperCase().slice(1) + "!")
-    } else ((humanChoice === "rock" && computerChoice === "paper") || (humanChoice === "paper" && computerChoice === "scissors") || (humanChoice === "scissors" && computerChoice === "rock")) {
+    } else () {
         console.log("You lose! " + computerChoice.charAt(0).toUpperCase().slice(1) + " beats " + humanChoice.charAt(0).toUpperCase().slice(1) + "!")
     }
 }
