@@ -51,8 +51,11 @@ function playGame () {
             console.log("You lose! " + computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1) + " beats " + humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1) + "!");
             computerScore++;
         }
-        const humanSelection = getHumanChoice();
-        const computerSelection = getComputerChoice();
+        let humanSelection;
+        let computerSelection;
+
+        humanSelection = getHumanChoice();
+        computerSelection = getComputerChoice();
 
         console.log(computerSelection);
         console.log(humanSelection);
