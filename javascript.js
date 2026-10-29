@@ -31,6 +31,9 @@ function getHumanChoice () {
 // Create variables that will become the arguments to pass to function that store the players choices
 // After both choices are made, increment the winners score and log a winner announcement
 
+let humanScore = 0;
+let computerScore = 0;
+
 function playRound(humanChoice, computerChoice) {
         humanChoice = humanChoice.toLowerCase();
         if (humanChoice === computerChoice) {
