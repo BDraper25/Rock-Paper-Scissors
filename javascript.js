@@ -54,7 +54,9 @@ function playRound(humanChoice, computerChoice) {
 
 const rockButton = document.createElement("button");
 rockButton.textContent = "Rock";
-rockButton.addEventListener('click', playRound);
+rockButton.addEventListener('click', function() {
+    playRound("Rock", getComputerChoice())
+});
 
 const paperButton = document.createElement("button");
 paperButton.textContent = "Paper";
