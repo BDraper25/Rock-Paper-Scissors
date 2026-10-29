@@ -50,10 +50,13 @@ function playRound(humanChoice, computerChoice) {
 
 
 const rockButton = document.createElement("button");
+rockButton.textContent = "Rock";
 rockButton.addEventListener('click', playRound);
 
 const paperButton = document.createElement("button");
+paperButton.textContent = "Paper";
 paperButton.addEventListener('click', playRound);
 
 const scissorsButton = document.createElement("button");
+scissorsButton.textContent = "Scissors";
 scissorsButton.addEventListener('click', playRound);
