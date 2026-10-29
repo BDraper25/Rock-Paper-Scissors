@@ -62,3 +62,6 @@ scissorsButton.addEventListener('click', function() {
 document.body.appendChild(rockButton);
 document.body.appendChild(paperButton);
 document.body.appendChild(scissorsButton);
+
+const results = document.createElement("div");
+document.body.appendChild(results);
