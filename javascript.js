@@ -58,55 +58,6 @@ function playGame () {
     let humanSelection;
     let computerSelection;
 
-    //Round 1
-
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice();
-
-    console.log(computerSelection);
-    console.log(humanSelection);
-
-    playRound(humanSelection, computerSelection);
-
-    //Round 2
-
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice();
-
-    console.log(computerSelection);
-    console.log(humanSelection);
-
-    playRound(humanSelection, computerSelection);
-
-    //Round 3
-
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice();
-
-    console.log(computerSelection);
-    console.log(humanSelection);
-
-    playRound(humanSelection, computerSelection);
-
-    //Round 4
-
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice();
-
-    console.log(computerSelection);
-    console.log(humanSelection);
-
-    playRound(humanSelection, computerSelection);
-
-    //Round 5
-
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice();
-
-    console.log(computerSelection);
-    console.log(humanSelection);
-
-    playRound(humanSelection, computerSelection);
 
     if (humanScore > computerScore) {
         return "You are the ultimate winner! Bots don't stand a chance!"
