@@ -49,11 +49,15 @@ rockButton.addEventListener('click', function() {
 
 const paperButton = document.createElement("button");
 paperButton.textContent = "Paper";
-paperButton.addEventListener('click', playRound);
+paperButton.addEventListener('click', function() {
+    playRound("Paper", getComputerChoice())
+});
 
 const scissorsButton = document.createElement("button");
 scissorsButton.textContent = "Scissors";
-scissorsButton.addEventListener('click', playRound);
+scissorsButton.addEventListener('click', function() {
+    playRound("Scissors", getComputerChoice())
+});
 
 document.body.appendChild(rockButton);
 document.body.appendChild(paperButton);
