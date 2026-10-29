@@ -31,26 +31,19 @@ function getHumanChoice () {
 // Create variables that will become the arguments to pass to function that store the players choices
 // After both choices are made, increment the winners score and log a winner announcement
 
-
-// Write a function and move playRound and the score variables into it
-// Move the round match code inside the play game function, not play round
-// repent the round code 5 times to have 5 rounds
-// Put a winner message inside the game function
-// The function will declare a winner after the 5 rounds finish
-
-function playGame () {
-    let humanScore = 0;
-    let computerScore = 0; 
-
-    function playRound(humanChoice, computerChoice) {
+function playRound(humanChoice, computerChoice) {
         humanChoice = humanChoice.toLowerCase();
         if (humanChoice === computerChoice) {
             console.log("It's a tie!")
-        } else if ((humanChoice === "rock" && computerChoice === "scissors") || (humanChoice === "paper" && computerChoice === "rock") || (humanChoice === "scissors" && computerChoice === "paper")) {
+        } else if (
+                    (humanChoice === "rock" && computerChoice === "scissors") || 
+                    (humanChoice === "paper" && computerChoice === "rock") || 
+                    (humanChoice === "scissors" && computerChoice === "paper")
+                ) {
             console.log("You win! " + humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1) + " beats " + computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1) + "!");
             humanScore++;
         } else {
             console.log("You lose! " + computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1) + " beats " + humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1) + "!");
             computerScore++;
         }
-    }}
+}
