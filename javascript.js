@@ -32,10 +32,10 @@ function playRound(humanChoice, computerChoice) {
                     (humanChoice === "paper" && computerChoice === "rock") || 
                     (humanChoice === "scissors" && computerChoice === "paper")
                 ) {
-            results.textContent = '"You win! " + humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1) + " beats " + computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1) + "!"';
+            results.textContent = "You win! " + humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1) + " beats " + computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1) + "!";
             humanScore++;
         } else {
-            results.textContent = '"You lose! " + computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1) + " beats " + humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1) + "!"';
+            results.textContent = "You lose! " + computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1) + " beats " + humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1) + "!";
             computerScore++;
         }
 }
