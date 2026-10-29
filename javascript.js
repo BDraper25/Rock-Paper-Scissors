@@ -53,8 +53,4 @@ function playGame () {
             console.log("You lose! " + computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1) + " beats " + humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1) + "!");
             computerScore++;
         }
-    }
-
-
-    
-
+    }}
