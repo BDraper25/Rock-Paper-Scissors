@@ -55,9 +55,6 @@ function playGame () {
         }
     }
 
-    let humanSelection;
-    let computerSelection;
-
 
     if (humanScore > computerScore) {
         return "You are the ultimate winner! Bots don't stand a chance!"
