@@ -47,3 +47,8 @@ function playRound(humanChoice, computerChoice) {
             computerScore++;
         }
 }
+
+
+const rockButton = document.createElement("button");
+const paperButton = document.createElement("button");
+const scissorsButton = document.createElement("button");
