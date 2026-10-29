@@ -56,14 +56,5 @@ function playGame () {
     }
 
 
-    if (humanScore > computerScore) {
-        return "You are the ultimate winner! Bots don't stand a chance!"
-    } else if (computerScore > humanScore) {
-        return "Aw! Better luck next time, AI is just too smart."
-    } else {
-        return "You tied! At least you didn't let the computer win either!"
-    }
-}
-
-console.log(playGame())
+    
 
