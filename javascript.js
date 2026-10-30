@@ -65,3 +65,6 @@ document.body.appendChild(scissorsButton);
 
 const results = document.createElement("div");
 document.body.appendChild(results);
+
+const gameScore = document.createElement("div");
+document.appendChild(gameScore);
