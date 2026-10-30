@@ -38,6 +38,7 @@ function playRound(humanChoice, computerChoice) {
             results.textContent = "You lose! " + computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1) + " beats " + humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1) + "!";
             computerScore++;
         }
+        gameScore.textContent = `Your score: ${humanScore} | Computer score: ${computerScore}`;
 }
 
 
@@ -68,4 +69,3 @@ document.body.appendChild(results);
 
 const gameScore = document.createElement("div");
 document.body.appendChild(gameScore);
-gameScore.textContent = `Your score: ${humanScore} | Computer score: ${computerScore}`;
