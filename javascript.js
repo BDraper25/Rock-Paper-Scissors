@@ -24,6 +24,9 @@ let humanScore = 0;
 let computerScore = 0;
 
 function playRound(humanChoice, computerChoice) {
+        if (humanScore === 5 || computerScore === 5) {
+            return;
+        }
         humanChoice = humanChoice.toLowerCase();
         if (humanChoice === computerChoice) {
             results.textContent = "It's a tie!";
