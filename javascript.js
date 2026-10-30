@@ -67,5 +67,5 @@ const results = document.createElement("div");
 document.body.appendChild(results);
 
 const gameScore = document.createElement("div");
-document.appendChild(gameScore);
+document.body.appendChild(gameScore);
 gameScore.textContent = `Your score: ${humanScore} | Computer score: ${computerScore}`;
