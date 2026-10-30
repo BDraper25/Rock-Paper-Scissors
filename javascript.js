@@ -39,6 +39,12 @@ function playRound(humanChoice, computerChoice) {
             computerScore++;
         }
         gameScore.textContent = `Your score: ${humanScore} | Computer score: ${computerScore}`;
+
+        if (humanScore === 5) {
+            finalMessage.textContent = "You are the ultimate winner!";
+        } else if (computerScore === 5) {
+            finalMessage.textContent = "You are the ultimate loser!";
+        }
 }
 
 
@@ -69,3 +75,6 @@ document.body.appendChild(results);
 
 const gameScore = document.createElement("div");
 document.body.appendChild(gameScore);
+
+let finalMessage = document.createElement("div");
+document.body.appendChild(finalMessage);
